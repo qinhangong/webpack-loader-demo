@@ -1,15 +1,15 @@
 const validate = require('schema-utils');
 const loaderUtils = require('loader-utils');
 const uglify = require('uglify-es');
-const schema = {
-    type: 'object',
-    properties: {
-        filename: {
-            type: 'string'
-        }
-    },
-    additionalProperties: false
-};
+// const schema = {
+//     type: 'object',
+//     properties: {
+//         filename: {
+//             type: 'string'
+//         }
+//     },
+//     additionalProperties: false
+// };
 
 module.exports = function(source) {
     const options = loaderUtils.getOptions(this);
