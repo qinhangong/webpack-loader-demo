@@ -1,0 +1,31 @@
+{
+    "name": "loader-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "css-loader": "^3.1.0",
+        "less": "^3.9.0",
+        "less-loader": "^5.0.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.39.1",
+        "webpack-cli": "^3.3.6"
+    },
+    "dependencies": {
+        "concat-with-sourcemaps": "^1.1.0",
+        "generate-sourcemap": "^0.1.0",
+        "loader-utils": "^1.2.3",
+        "source-map": "^0.7.3",
+        "source-map-index-generator": "^0.1.2",
+        "source-map-support": "^0.5.13",
+        "uglify-es": "^3.3.9"
+    }
+}
