@@ -88,18 +88,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-class Animal {
-    constructor(name) {
-        this.name = name;
-    }
-    printName() {
-        
-        return this.name;
-    }
-}
-const dog = new Animal('wangcai');
-dog.printName();
-
+throw new Error("Module build failed (from ./loaders/del-log-loader.js):\nValidationError: del-log-loader Invalid Options\n\noptions.type should be equal to one of the allowed values\n\n    at validateOptions (/Users/leilei/learning/webpack-loader-demo/node_modules/schema-utils/src/validateOptions.js:32:11)\n    at Object.module.exports (/Users/leilei/learning/webpack-loader-demo/loaders/del-log-loader.js:24:5)");
 
 /***/ })
 /******/ ]);

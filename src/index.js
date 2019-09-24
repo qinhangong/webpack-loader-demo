@@ -2,10 +2,11 @@ class Animal {
     constructor(name) {
         this.name = name;
     }
-    printName() {
+    getName() {
         console.log('this.name========', this.name);
         return this.name;
     }
 }
 const dog = new Animal('wangcai');
-dog.printName();
+dog.getName();
+module.exports = Animal;

@@ -4,18 +4,20 @@ module.exports = {
     mode: 'none',
     entry: './src/index.js',
     devtool: 'source-map',
+    resolveLoader: {
+        modules: ['node_modules', path.resolve(__dirname, 'loaders')]
+    },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 use: [
-                    // {
-                    //     loader: path.resolve(__dirname, 'loaders/transform-loader')
-                    // },
+                    'transform-loader',
                     {
-                        loader: path.resolve(__dirname, 'loaders/drop-console-loader'),
+                        loader: 'del-log-loader',
                         options: {
-                            filename: 'source.js'
+                            filename: 'source.js',
+                            isDelLog: process.env.NODE_ENV === 'production'
                         }
                     }
                 ]
